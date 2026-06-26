@@ -34,6 +34,7 @@ export const SIGNAL_THRESHOLD      = parseInt(process.env.SIGNAL_THRESHOLD   ?? 
 // ── Gemini (baru di v5) ────────────────────────────────────────────────────────
 
 export const GEMINI_MODEL           = 'gemini-2.5-flash'  // gemini-2.0-flash shutdown 1 Jun 2026
+export const GROQ_MODEL              = 'llama-3.3-70b-versatile'  // fallback saat Gemini chat rate limit (5 RPM free tier)
 export const GEMINI_EMBEDDING_MODEL = 'gemini-embedding-001'  // text-embedding-004 dimatikan 14 Jan 2026
 export const EMBEDDING_DIMENSIONS   = 768  // di-scale-down via outputDimensionality (default model: 3072)
 
